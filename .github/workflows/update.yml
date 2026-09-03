@@ -1,0 +1,39 @@
+name: refresh-data
+
+on:
+  schedule:
+    # 北京时间约 15:25（UTC 07:25）抓取当日收盘数据，工作日执行
+    - cron: "25 7 * * 1-5"
+  workflow_dispatch:   # 支持在 GitHub 网页上点「Run workflow」手动更新
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install requests
+        run: pip install --quiet requests
+
+      - name: Fetch market data + generate dashboard
+        run: python scripts/update.py
+
+      - name: Commit data.json (仅在有变化时)
+        run: |
+          if git diff --quiet -- docs/data/data.json; then
+            echo "数据无变化，跳过提交"
+            exit 0
+          fi
+          git config user.name "ashare-cockpit[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data/data.json
+          git commit -m "data: 行情/判断更新"
+          git push

@@ -236,5 +236,11 @@ def main():
     C.save_json(os.path.join(TMP, "raw.json"), raw)
     print(f"[fetch] total {time.time()-t0:.0f}s -> tmp/raw.json  market_closed={closed}")
 
+    # 护栏：核心行情全缺时直接失败，避免用空数据覆盖上一次正常快照
+    core_ok = (raw["fetched"]["indices"].get("sh000001") or {}).get("price") is not None
+    if not core_ok and not (b or {}).get("qdate"):
+        print("[fetch] FATAL: 指数与涨跌家数均抓取失败，保留上一版数据")
+        raise SystemExit(2)
+
 if __name__ == "__main__":
     main()
