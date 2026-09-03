@@ -106,26 +106,44 @@ def fetch_boards():
         # 与 data.total 核对，若翻页异常会导致数量偏差，交由 analyze 判断字段空缺
     return out
 
-# ---------- 4. 全A主力净流入（分页求和） ----------
+# ---------- 4. 全A主力净流入（并发分页求和，缓解境外IP慢连接） ----------
 A_FS = "m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23,m:1+t:81"
+from concurrent.futures import ThreadPoolExecutor
 
-def fetch_market_main_flow(deadline=175):
-    """全A(沪深) 主力净流入与成交额：按 f12 升序稳定分页求和。限时内抓不完就标记不完整。"""
+
+def _page_rows(pn, pz=100):
+    path = (f"/api/qt/clist/get?pn={pn}&pz={pz}&po=0&np=1&fltt=2&invt=2&fid=f12"
+            f"&fs={A_FS}&fields=f6,f62,f12,f14")
+    d = C.em_data(path)
+    return ((d or {}).get("diff") or [])
+
+
+def fetch_market_main_flow(deadline=120, workers=8):
+    """并发分页抓全A(沪深)，限时内抓不完则标记不完整。"""
     total_main = 0.0
     total_amt = 0.0
     n = 0
     incomplete = False
     t0 = time.time()
-    for pn in range(1, 60):
-        if time.time() - t0 > deadline:
-            incomplete = True
-            break
-        path = (f"/api/qt/clist/get?pn={pn}&pz=100&po=0&np=1&fltt=2&invt=2&fid=f12"
-                f"&fs={A_FS}&fields=f6,f62,f12,f14")
-        d = C.em_data(path)
-        rows = ((d or {}).get("diff") or [])
-        if not rows:
-            break
+    pn = 1
+    all_rows = {}
+    stop = False
+    while not stop and time.time() - t0 < deadline:
+        chunk = list(range(pn, pn + workers * 2))
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            res = list(ex.map(_page_rows, chunk))
+        for i, rows in zip(chunk, res):
+            if not rows:
+                stop = True
+                break
+            if i not in all_rows:
+                all_rows[i] = rows
+            if len(rows) < 100:
+                stop = True
+        pn += workers * 2
+        if pn > 60:
+            stop = True
+    for rows in all_rows.values():
         for r in rows:
             a = _num(r.get("f6"))
             m = _num(r.get("f62"))
@@ -133,10 +151,8 @@ def fetch_market_main_flow(deadline=175):
                 n += 1
             total_amt += a or 0
             total_main += m or 0
-        if len(rows) < 100:
-            incomplete = incomplete or pn > 1
-            break
-        time.sleep(0.02)
+    if time.time() - t0 >= deadline or n < 5000:
+        incomplete = True
     return {"main_yuan": total_main, "amt_yuan": total_amt, "stocks": n, "incomplete": incomplete}
 
 # ---------- 5. 海外指数 ----------
