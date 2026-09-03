@@ -36,4 +36,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add docs/data/data.json
           git commit -m "data: 行情/判断更新"
+          git pull --rebase origin main || echo "(远程无新提交或冲突，继续尝试推送)"
           git push
