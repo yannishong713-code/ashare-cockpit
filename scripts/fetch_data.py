@@ -8,8 +8,9 @@ fetch_data.py —— 抓取全部行情，输出 tmp/raw.json
  5) 持仓行情+历史K线(腾讯)  6) 海外指数(腾讯/东财)
 """
 import io, json, os, sys, time
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 import common as C
+
+C.ensure_utf8()
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TMP = os.path.join(ROOT, "tmp")

@@ -4,9 +4,22 @@
 所有函数绝不伪造数据：抓不到就返回 None，由上层显示「暂无数据」。
 """
 import json, time, datetime
+import sys, io
 import requests
 
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0 Safari/537.36"}
+
+_cw = None  # 常驻引用，防止包装器被 GC 关闭共享 buffer
+
+
+def ensure_utf8():
+    """幂等：把 stdout 包成 UTF-8。跨模块只包装一次、持有全局引用。"""
+    global _cw
+    enc = getattr(sys.stdout, "encoding", "") or ""
+    if enc.lower() not in ("utf-8", "utf8", "cp65001"):
+        if _cw is None:
+            _cw = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+        sys.stdout = _cw
 
 EM_HOSTS = [
     "push2.eastmoney.com",

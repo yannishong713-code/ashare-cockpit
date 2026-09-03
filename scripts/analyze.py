@@ -6,7 +6,9 @@ analyze.py —— 规则引擎：把 raw.json 的行情 + overrides.json 的宏�
 输出里每个判断都带：结论来自(自动规则/手动)、数据日期、说明。
 """
 import io, json, os, sys, datetime
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+import common as C
+
+C.ensure_utf8()
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = json.load(open(os.path.join(ROOT, "tmp", "raw.json"), encoding="utf-8"))
