@@ -109,7 +109,7 @@ def fetch_boards():
 # ---------- 4. 全A主力净流入（分页求和） ----------
 A_FS = "m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23,m:1+t:81"
 
-def fetch_market_main_flow(deadline=50):
+def fetch_market_main_flow(deadline=175):
     """全A(沪深) 主力净流入与成交额：按 f12 升序稳定分页求和。限时内抓不完就标记不完整。"""
     total_main = 0.0
     total_amt = 0.0
@@ -214,7 +214,7 @@ def main():
     print(f"[fetch] boards industry={len(boards['industry'])} concept={len(boards['concept'])}")
 
     mainf = None
-    for _ in range(4):
+    for _ in range(3):
         try:
             mainf = fetch_market_main_flow()
             if mainf and not mainf.get("incomplete") and mainf.get("stocks", 0) > 3000:
