@@ -23,9 +23,9 @@ def ensure_utf8():
 
 EM_HOSTS = [
     "push2.eastmoney.com",
+    "push2delay.eastmoney.com",
     "1.push2.eastmoney.com",
     "20.push2.eastmoney.com",
-    "push2delay.eastmoney.com",
 ]
 EM_HIS_HOSTS = [
     "push2his.eastmoney.com",
