@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "A股资金·政策驾驶舱",
-  "generated_at": "2026-09-03 19:48:55",
+  "generated_at": "2026-09-03 20:28:24",
   "market_closed": true,
   "asof": "行情 2026-09-03 16:14；涨跌分布 20260903",
   "data_src": "数据：腾讯行情/东方财富；宏观政策：手动维护(带日期来源)",
@@ -13,7 +13,7 @@
  "conclusion": {
   "verdict": "今日：观望",
   "verdict_src": "自动规则",
-  "explain": "经济偏弱；政策预期增强；成交缩量；主力流出115.1亿。 以持有和换仓为主，不提高总仓位，等成交放量确认。",
+  "explain": "经济偏弱；政策预期增强；成交缩量。 以持有和换仓为主，不提高总仓位，等成交放量确认。",
   "market_state": {
    "name": "存量博弈",
    "color": "yellow",
@@ -26,7 +26,7 @@
    "asof": "2026-09-03 16:14"
   },
   "turnover_wan": 1.78,
-  "main_yi": -115.1,
+  "main_yi": null,
   "breadth": {
    "up": 1795,
    "down": 3430,
@@ -74,7 +74,7 @@
   "money": {
    "status": "存量博弈",
    "color": "yellow",
-   "note": "沪深成交1.78万亿、较5日均缩量、全A主力净流出115.1亿；无持续放量，以板块轮动为主",
+   "note": "沪深成交1.78万亿、较5日均缩量；无持续放量，以板块轮动为主",
    "asof": "2026-09-03 16:14"
   },
   "global_risk": [
@@ -250,12 +250,12 @@
    "chg_pct": -1.6,
    "chg5": -3.3101045296167086,
    "pos20": 0.0,
-   "proxy": null,
+   "proxy": "恒生科技指数",
    "flow": {
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": null,
+    "pct": -1.1,
     "board": null
    },
    "action": "等待",
@@ -404,12 +404,12 @@
    "chg_pct": 0.05,
    "chg5": -1.3010318528488107,
    "pos20": 0.3148148148148169,
-   "proxy": null,
+   "proxy": "纳斯达克",
    "flow": {
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": null,
+    "pct": 0.5,
     "board": null
    },
    "action": "等待",
@@ -426,12 +426,12 @@
    "chg_pct": -0.05,
    "chg5": -1.6683022571148065,
    "pos20": 0.2874999999999994,
-   "proxy": null,
+   "proxy": "标普500",
    "flow": {
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": null,
+    "pct": 0.5,
     "board": null
    },
    "action": "等待",
