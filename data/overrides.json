@@ -1,0 +1,81 @@
+{
+  "说明": "本文件是唯一需要手动维护的层。股票行情会自动抓取；经济/政策/事件这些无法自动获取的信息填在这里（务必带日期与来源，宁缺毋滥）。改完运行 scripts/update.py 重新生成看板。",
+
+  "holdings": [
+    {"code": "sz002518", "name": "科士达",     "kind": "个股",  "market": "A股",  "sector": "电源/数据中心", "kw": [], "note": "个股用自身趋势判断"},
+    {"code": "sz159399", "name": "现金流ETF",   "kind": "ETF",   "market": "A股",  "sector": "红利防御",       "kw": ["红利", "高股息", "现金"]},
+    {"code": "sz159516", "name": "半导体设备ETF", "kind": "ETF", "market": "A股",  "sector": "半导体",         "kw": ["半导体设备", "半导体", "芯片"]},
+    {"code": "sz159755", "name": "电池ETF",     "kind": "ETF",   "market": "A股",  "sector": "电池",           "kw": ["电池"]},
+    {"code": "sz159792", "name": "港股互联网ETF", "kind": "ETF", "market": "A股",  "sector": "港股互联网",     "kw": [], "proxy_hk": "hkHSTECH"},
+    {"code": "sh512800", "name": "银行ETF",     "kind": "ETF",   "market": "A股",  "sector": "银行",           "kw": ["银行"]},
+    {"code": "sh515880", "name": "通信ETF",     "kind": "ETF",   "market": "A股",  "sector": "通信",           "kw": ["通信设备", "通信", "光模块", "算力"]},
+    {"code": "sh588790", "name": "科创ETF588790", "kind": "ETF", "market": "A股",  "sector": "科创",           "kw": [], "note": "无单一对应板块，用自身动量"},
+    {"code": "sz159326", "name": "电网设备ETF",  "kind": "ETF",  "market": "A股",  "sector": "电网设备",       "kw": ["电网设备", "特高压", "电力设备"]},
+    {"code": "sz159770", "name": "机器人ETF",    "kind": "ETF",  "market": "A股",  "sector": "机器人",         "kw": ["机器人"]},
+    {"code": "sh518880", "name": "黄金ETF",     "kind": "ETF",   "market": "海外", "sector": "黄金",           "kw": [], "note": "跟踪金价而非黄金股，用自身动量"},
+    {"code": "sh513100", "name": "纳指ETF",     "kind": "ETF",   "market": "海外", "sector": "纳指",           "kw": [], "proxy_us": "usIXIC"},
+    {"code": "sz159655", "name": "标普500ETF",  "kind": "ETF",   "market": "海外", "sector": "标普",           "kw": [], "proxy_us": "usINX"},
+    {"code": "sh513880", "name": "日经225ETF",  "kind": "ETF",   "market": "海外", "sector": "日经",           "kw": []}
+  ],
+
+  "holdings_notes": [
+    "588790 该代码的实际产品是「科创AIETF博时」，与预期的宽基科创ETF可能不同，请核对，如需换成科创50ETF(588000) 直接改 code。",
+    "日经ETF 默认填 513880，如你的实际持仓是其它代码（513520/513000等）请修改。"
+  ],
+
+  "macro": {
+    "economy_assessment": {
+      "status": "偏弱",
+      "color": "yellow",
+      "note": "8月制造业PMI 49.8仍在荣枯线下，但环比+0.6、产需双双改善；物价温和，PPI涨幅回落显示中上游仍有压力",
+      "asof": "2026-09-01",
+      "src": "国家统计局PMI(2026-08发布)、统计局CPI/PPI(2026-07)、央行金融数据(2026-07)"
+    },
+    "items": [
+      {"name": "官方制造业PMI", "value": 49.8, "mo": "2026-08", "note": "高于上月0.6个百分点，供需同步改善但仍低于50", "asof": "2026-09-01", "src": "国家统计局"},
+      {"name": "CPI 同比", "value": 0.5, "mo": "2026-07", "note": "温和上涨，环比降幅收窄", "asof": "2026-08-09", "src": "国家统计局"},
+      {"name": "PPI 同比", "value": 3.5, "mo": "2026-07", "note": "涨幅回落，环比转降", "asof": "2026-08-09", "src": "国家统计局"},
+      {"name": "社融存量 同比", "value": 7.4, "mo": "2026-07", "note": "前7月新增社融22.25万亿元", "asof": "2026-08-14", "src": "中国人民银行"}
+    ]
+  },
+
+  "policy": {
+    "assessment": {
+      "status": "预期增强",
+      "color": "green",
+      "note": "内需转弱倒逼政策加码，机构普遍预期增量政策或在9月底落地；政策尚未兑现，属预期先行阶段",
+      "asof": "2026-09-03",
+      "src": "中国金融信息网(2026-08-27)、证券之星(2026-09-01)、券商9月策略(2026-08-31)"
+    },
+    "items": [
+      {"date": "2026-08-27", "event": "内需转弱倒逼政策加码，增量工具或9月底落地（机构预期）", "weight": "+", "src": "中国金融信息网"},
+      {"date": "2026-09-01", "event": "8月PMI点评：增量政策布局进入关键窗口期", "weight": "+", "src": "证券之星"},
+      {"date": "2026-09-01", "event": "券商9月策略：政策再平衡启动，关注基建/地产/消费与红利主线", "weight": "+", "src": "新浪财经/中财网"}
+    ]
+  },
+
+  "global_risk": [
+    {"date": "2026-08-28~09-03", "note": "美联储主席沃什表态偏鹰，市场定价9月加息概率升至约60-66%；30年期美债收益率一度上探5.34%，美元流动性环境偏紧", "src": "金十数据/芝商所FedWatch 2026-09-03"}
+  ],
+
+  "events": [
+    {"date": "2026-09-04", "name": "美国8月非农就业", "kind": "海外宏观", "est": false, "note": "临近FOMC的关键数据", "src": "美国劳工部排期"},
+    {"date": "2026-09-09", "name": "中国8月CPI/PPI（预计发布）", "kind": "国内宏观", "est": true, "note": "", "src": "按常规排期预计"},
+    {"date": "2026-09-15~17", "name": "美联储9月FOMC（市场定价加息概率约60%）", "kind": "海外政策", "est": true, "note": "", "src": "芝商所FedWatch/金十 2026-09-03"}
+  ],
+
+  "manual": {
+    "_说明": "以下字段留空则由规则引擎自动生成；填了则优先采用（每日可用手机/电脑改一次后重新生成）。",
+    "verdict_title": null,
+    "verdict_explain": null,
+    "market_state": null,
+    "cycle_stage": null,
+    "cycle_note": null,
+    "holdings_action": {},
+    "opportunity": null,
+    "pos_pct": null,
+    "cash_pct": null,
+    "op_headline": null,
+    "top_action": null
+  }
+}

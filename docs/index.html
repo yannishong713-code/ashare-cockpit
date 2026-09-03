@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>A股资金·政策驾驶舱</title>
+<meta name="description" content="每天30秒看懂：市场状态 / 经济政策资金 / 钱往哪走 / 持仓动作 / 赚钱周期 / 机会与风险" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <div class="logo">📈</div>
+    <div>
+      <h1>A股资金·政策驾驶舱</h1>
+      <div class="sub" id="subTitle">个人每日一屏 · 数据见每个卡片</div>
+    </div>
+  </div>
+  <div class="updated" id="updatedChip" title="页面数据快照时间">
+    <span class="dot"></span><span id="updatedTxt">读取中…</span>
+  </div>
+  <button class="iconbtn" id="btnTheme" title="切换明暗" aria-label="切换明暗">🌓</button>
+  <button class="iconbtn" id="btnReload" title="刷新页面数据" aria-label="刷新页面数据">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.3"/><path d="M21 3v6h-6"/></svg>
+  </button>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+
+    <!-- ① 今日结论 -->
+    <section class="card full" id="sec-conclusion" aria-label="今日结论">
+      <div class="h"><span class="no">1</span><h2>今日结论</h2><span class="tag" id="conclTag">-</span></div>
+      <div id="heroBox"><div class="verdict">加载中…</div></div>
+    </section>
+
+    <!-- ② 三大变量 -->
+    <section class="card full" id="sec-vars" aria-label="三大变量">
+      <div class="h"><span class="no">2</span><h2>三大变量</h2><span class="tag">宏观/政策为手动维护（见页脚）</span></div>
+      <div class="vars" id="varsBox"></div>
+    </section>
+
+    <!-- ③ 钱往哪里走 -->
+    <section class="card full" id="sec-flows" aria-label="资金流向">
+      <div class="h"><span class="no">3</span><h2>钱正在往哪里走</h2><span class="tag">资金：今日主力净额 + 5/10日加权</span></div>
+      <div class="twocol">
+        <div class="flowpanel">
+          <h4 style="color:var(--up)">🟢 资金流入 TOP 3</h4>
+          <div id="flowIn"></div>
+        </div>
+        <div class="flowpanel">
+          <h4 style="color:var(--down)">🔴 资金流出 TOP 3</h4>
+          <div id="flowOut"></div>
+        </div>
+      </div>
+      <div class="basis" id="flowBasis"></div>
+    </section>
+
+    <!-- ④ 我的持仓 -->
+    <section class="card span2" id="sec-holdings" aria-label="我的持仓">
+      <div class="h"><span class="no">4</span><h2>我的持仓</h2><span class="tag">动作：加仓/逢跌加/持有/等待/减仓</span></div>
+      <div class="hold" id="holdBox"></div>
+      <div class="hnote" id="holdNotes" hidden></div>
+    </section>
+
+    <!-- ⑤ 赚钱周期 -->
+    <section class="card" id="sec-cycle" aria-label="赚钱周期">
+      <div class="h"><span class="no">5</span><h2>赚钱周期</h2><span class="tag" id="cycleSrc">-</span></div>
+      <div class="steps" id="stepsBox"></div>
+      <div class="cyclenow" id="cycleNow"></div>
+      <div class="cyreason" id="cycleReason"></div>
+      <div class="basis">判断链：经济弱 → 政策发力 → 资金集中 → 成交放量 → 赚钱效应</div>
+    </section>
+
+    <!-- ⑥ 最大机会 -->
+    <section class="card full" id="sec-opportunity" aria-label="当前最大机会">
+      <div class="h"><span class="no">6</span><h2>当前最大机会</h2><span class="tag">无强信号时不硬找</span></div>
+      <div id="oppBox"></div>
+    </section>
+
+    <!-- ⑦ 今日操作 -->
+    <section class="card full" id="sec-op" aria-label="今日操作">
+      <div class="h"><span class="no">7</span><h2>今日操作</h2><span class="tag" id="opTag">-</span></div>
+      <div id="opBox"></div>
+    </section>
+
+  </div>
+
+  <footer class="foot">
+    <div id="footMain"></div>
+    <div>⚠️ 数据来自腾讯行情/东方财富，禁止自动交易；判断由规则引擎基于真实数据生成，不构成投资建议。</div>
+    <div><a id="repoLink" href="#">使用说明 · 修改持仓/宏观 · 手动云端更新</a></div>
+  </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
