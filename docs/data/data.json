@@ -1,9 +1,9 @@
 {
  "meta": {
   "title": "A股资金·政策驾驶舱",
-  "generated_at": "2026-09-21 22:22:00",
+  "generated_at": "2026-09-22 20:41:56",
   "market_closed": true,
-  "asof": "行情 2026-09-21 16:14；涨跌分布 20260921",
+  "asof": "行情 2026-09-22 16:14；涨跌分布 20260922",
   "data_src": "数据：腾讯行情/东方财富；宏观政策：手动维护(带日期来源)",
   "note_holdings": [
    "588790 该代码的实际产品是「科创AIETF博时」，与预期的宽基科创ETF可能不同，请核对，如需换成科创50ETF(588000) 直接改 code。",
@@ -21,17 +21,17 @@
   },
   "sh": {
    "name": "上证指数",
-   "price": 3949.91,
-   "chg_pct": 0.97,
-   "asof": "2026-09-21 16:14"
+   "price": 3952.13,
+   "chg_pct": 0.06,
+   "asof": "2026-09-22 16:14"
   },
-  "turnover_wan": 2.05,
+  "turnover_wan": 2.15,
   "main_yi": null,
   "breadth": {
-   "up": 4387,
-   "down": 895,
-   "flat": 71,
-   "qdate": "20260921"
+   "up": 2310,
+   "down": 2910,
+   "flat": 134,
+   "qdate": "20260922"
   }
  },
  "vars": {
@@ -74,8 +74,8 @@
   "money": {
    "status": "存量博弈",
    "color": "yellow",
-   "note": "沪深成交2.05万亿、较5日均放量；无持续放量，以板块轮动为主",
-   "asof": "2026-09-21 16:14"
+   "note": "沪深成交2.15万亿、较5日均放量；无持续放量，以板块轮动为主",
+   "asof": "2026-09-22 16:14"
   },
   "global_risk": [
    {
@@ -88,66 +88,66 @@
  "flows": {
   "in": [
    {
-    "name": "通信设备",
-    "board": "通信设备",
-    "score_yi": 81.1,
-    "today_main_yi": 26.0,
-    "f5_yi": 143.8,
-    "f10_yi": 125.0,
-    "pct_today": 1.86,
-    "beats_index": true
-   },
-   {
-    "name": "光模块",
-    "board": "光通信模块",
-    "score_yi": 76.3,
-    "today_main_yi": 32.6,
-    "f5_yi": 131.6,
-    "f10_yi": 102.4,
-    "pct_today": 1.15,
-    "beats_index": true
-   },
-   {
     "name": "半导体",
     "board": "半导体",
-    "score_yi": 55.8,
-    "today_main_yi": -49.8,
-    "f5_yi": 266.0,
-    "f10_yi": 4.4,
-    "pct_today": 0.2,
-    "beats_index": false
+    "score_yi": 56.7,
+    "today_main_yi": -13.4,
+    "f5_yi": 208.0,
+    "f10_yi": 4.9,
+    "pct_today": 0.46,
+    "beats_index": true
+   },
+   {
+    "name": "人工智能",
+    "board": "人工智能",
+    "score_yi": 20.9,
+    "today_main_yi": 24.3,
+    "f5_yi": 162.4,
+    "f10_yi": -199.9,
+    "pct_today": 1.08,
+    "beats_index": true
+   },
+   {
+    "name": "保险",
+    "board": "保险Ⅲ",
+    "score_yi": 7.2,
+    "today_main_yi": 3.8,
+    "f5_yi": 17.5,
+    "f10_yi": 0.3,
+    "pct_today": 1.0,
+    "beats_index": true
    }
   ],
   "out": [
    {
-    "name": "电池",
-    "board": "电池",
-    "score_yi": -58.7,
-    "today_main_yi": -17.5,
-    "f5_yi": -94.6,
-    "f10_yi": -107.7,
+    "name": "有色",
+    "board": "有色金属",
+    "score_yi": -49.2,
+    "today_main_yi": -2.0,
+    "f5_yi": -49.5,
+    "f10_yi": -166.5,
     "pct_today": 0.05,
     "beats_index": false
    },
    {
-    "name": "有色",
-    "board": "有色金属",
-    "score_yi": -55.6,
-    "today_main_yi": -22.3,
-    "f5_yi": -59.9,
-    "f10_yi": -132.2,
-    "pct_today": 0.96,
+    "name": "电池",
+    "board": "电池",
+    "score_yi": -38.0,
+    "today_main_yi": 2.5,
+    "f5_yi": -72.1,
+    "f10_yi": -88.1,
+    "pct_today": -0.14,
     "beats_index": false
    },
    {
-    "name": "消费电子",
-    "board": "消费电子",
-    "score_yi": -21.4,
-    "today_main_yi": -5.1,
-    "f5_yi": -1.4,
-    "f10_yi": -92.4,
-    "pct_today": 1.83,
-    "beats_index": true
+    "name": "电网设备",
+    "board": "电网设备",
+    "score_yi": -29.9,
+    "today_main_yi": -24.2,
+    "f5_yi": -14.5,
+    "f10_yi": -67.0,
+    "pct_today": -0.68,
+    "beats_index": false
    }
   ]
  },
@@ -158,10 +158,10 @@
    "tag": null,
    "kind": "个股",
    "market": "A股",
-   "price": 39.49,
-   "chg_pct": 0.46,
-   "chg5": 6.442048517520216,
-   "pos20": 1.0,
+   "price": 39.16,
+   "chg_pct": -0.84,
+   "chg5": 6.732079585718176,
+   "pos20": 0.9305263157894725,
    "proxy": null,
    "flow": {
     "today": null,
@@ -170,9 +170,9 @@
     "pct": null,
     "board": null
    },
-   "action": "持有",
-   "action_color": "blue",
-   "reason": "趋势平稳偏强，继续持有"
+   "action": "减仓",
+   "action_color": "red",
+   "reason": "近20日高位(93%)且5日回落，先减部分锁盈"
   },
   {
    "code": "sz159399",
@@ -180,21 +180,21 @@
    "tag": "现金流ETF",
    "kind": "ETF",
    "market": "A股",
-   "price": 0.993,
-   "chg_pct": 0.4,
-   "chg5": -1.492537313432829,
-   "pos20": 0.1290322580645166,
+   "price": 0.989,
+   "chg_pct": -0.4,
+   "chg5": -1.100000000000001,
+   "pos20": 0.09677419354838744,
    "proxy": null,
    "flow": {
-    "today": 16.1,
-    "f5": 0.6,
-    "f10": -17.9,
-    "pct": 1.1,
+    "today": 1.3,
+    "f5": 17.1,
+    "f10": -16.9,
+    "pct": 0.1,
     "board": "红利股"
    },
-   "action": "等待",
-   "action_color": "yellow",
-   "reason": "资金中性、位置低但5日仍弱，等确认"
+   "action": "持有",
+   "action_color": "blue",
+   "reason": "资金小幅流入(1.3亿)，持有观察"
   },
   {
    "code": "sz159516",
@@ -202,21 +202,21 @@
    "tag": "半导体设备ETF",
    "kind": "ETF",
    "market": "A股",
-   "price": 0.724,
-   "chg_pct": -0.69,
-   "chg5": 11.111111111111093,
-   "pos20": 0.757894736842105,
+   "price": 0.714,
+   "chg_pct": -1.38,
+   "chg5": 6.128550074738404,
+   "pos20": 0.652631578947368,
    "proxy": null,
    "flow": {
-    "today": -8.1,
-    "f5": 68.6,
-    "f10": 19.6,
-    "pct": -0.8,
-    "board": "半导体设备"
+    "today": -13.4,
+    "f5": 208.0,
+    "f10": 4.9,
+    "pct": 0.5,
+    "board": "半导体"
    },
    "action": "持有",
    "action_color": "blue",
-   "reason": "资金小幅流入(-8.1亿)，持有观察"
+   "reason": "资金小幅流入(-13.4亿)，持有观察"
   },
   {
    "code": "sz159755",
@@ -224,21 +224,21 @@
    "tag": "电池ETF",
    "kind": "ETF",
    "market": "A股",
-   "price": 0.879,
-   "chg_pct": 0.23,
-   "chg5": 0.0,
-   "pos20": 0.15909090909090928,
+   "price": 0.883,
+   "chg_pct": 0.46,
+   "chg5": 1.9630484988452768,
+   "pos20": 0.2045454545454548,
    "proxy": null,
    "flow": {
-    "today": -17.5,
-    "f5": -94.6,
-    "f10": -107.7,
-    "pct": 0.1,
+    "today": 2.5,
+    "f5": -72.1,
+    "f10": -88.1,
+    "pct": -0.1,
     "board": "电池"
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "资金持续流出(17.5亿/5日94.6亿)，超跌等企稳"
+   "reason": "流出但已超跌，等企稳"
   },
   {
    "code": "sz159792",
@@ -246,16 +246,16 @@
    "tag": "港股互联网ETF",
    "kind": "ETF",
    "market": "A股",
-   "price": 0.545,
-   "chg_pct": 0.93,
-   "chg5": 0.5535055350553542,
-   "pos20": 0.2884615384615391,
+   "price": 0.552,
+   "chg_pct": 1.28,
+   "chg5": 1.845018450184499,
+   "pos20": 0.42307692307692396,
    "proxy": "恒生科技指数",
    "flow": {
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": 0.4,
+    "pct": 0.3,
     "board": null
    },
    "action": "持有",
@@ -269,20 +269,20 @@
    "kind": "ETF",
    "market": "A股",
    "price": 0.839,
-   "chg_pct": 0.48,
-   "chg5": -1.869158878504673,
+   "chg_pct": 0.0,
+   "chg5": -0.3558718861209953,
    "pos20": 0.5897435897435898,
    "proxy": null,
    "flow": {
-    "today": 8.1,
-    "f5": -26.2,
-    "f10": -39.6,
-    "pct": 0.2,
+    "today": -0.5,
+    "f5": -9.6,
+    "f10": -38.4,
+    "pct": -0.1,
     "board": "银行"
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "资金小幅流出(8.1亿)，再观察一日"
+   "reason": "资金流出但位置不高(58%)，再观察"
   },
   {
    "code": "sh515880",
@@ -290,21 +290,21 @@
    "tag": "通信ETF",
    "kind": "ETF",
    "market": "A股",
-   "price": 0.712,
-   "chg_pct": 1.14,
-   "chg5": 8.066971080669694,
-   "pos20": 1.0,
+   "price": 0.707,
+   "chg_pct": -0.7,
+   "chg5": 8.728943338437967,
+   "pos20": 0.9726027397260274,
    "proxy": null,
    "flow": {
-    "today": 26.0,
-    "f5": 143.8,
-    "f10": 125.0,
-    "pct": 1.9,
-    "board": "通信设备"
+    "today": -60.1,
+    "f5": 96.3,
+    "f10": 49.4,
+    "pct": 0.1,
+    "board": "通信"
    },
    "action": "持有",
    "action_color": "blue",
-   "reason": "资金流入但位置已高(100%)，持有不追"
+   "reason": "资金小幅流入(-60.1亿)，持有观察"
   },
   {
    "code": "sh588790",
@@ -312,10 +312,10 @@
    "tag": "科创ETF588790",
    "kind": "ETF",
    "market": "A股",
-   "price": 0.789,
-   "chg_pct": 0.9,
-   "chg5": 8.230452674897126,
-   "pos20": 0.7317073170731707,
+   "price": 0.814,
+   "chg_pct": 3.17,
+   "chg5": 10.748299319727895,
+   "pos20": 1.0,
    "proxy": null,
    "flow": {
     "today": null,
@@ -334,21 +334,21 @@
    "tag": "电网设备ETF",
    "kind": "ETF",
    "market": "A股",
-   "price": 1.69,
-   "chg_pct": 1.5,
-   "chg5": 3.8083538083538038,
-   "pos20": 0.9444444444444443,
+   "price": 1.679,
+   "chg_pct": -0.65,
+   "chg5": 3.5141800246609067,
+   "pos20": 0.7916666666666675,
    "proxy": null,
    "flow": {
-    "today": 5.6,
-    "f5": -5.6,
-    "f10": -43.2,
-    "pct": 1.4,
+    "today": -24.2,
+    "f5": -14.5,
+    "f10": -67.0,
+    "pct": -0.7,
     "board": "电网设备"
    },
    "action": "减仓",
    "action_color": "red",
-   "reason": "高位(94%)资金转流出(5.6亿)"
+   "reason": "资金持续流出(24.2亿/5日14.5亿)，换出"
   },
   {
    "code": "sz159770",
@@ -356,21 +356,21 @@
    "tag": "机器人ETF",
    "kind": "ETF",
    "market": "A股",
-   "price": 0.968,
-   "chg_pct": -0.21,
-   "chg5": 2.1097046413502074,
-   "pos20": 0.4166666666666667,
+   "price": 0.97,
+   "chg_pct": 0.21,
+   "chg5": 3.4115138592750505,
+   "pos20": 0.4444444444444444,
    "proxy": null,
    "flow": {
-    "today": -5.3,
-    "f5": -0.3,
-    "f10": -25.3,
-    "pct": 0.3,
+    "today": -2.9,
+    "f5": -2.3,
+    "f10": -23.3,
+    "pct": 0.1,
     "board": "机器人"
    },
-   "action": "等待",
-   "action_color": "yellow",
-   "reason": "资金流出但位置不高(41%)，再观察"
+   "action": "减仓",
+   "action_color": "red",
+   "reason": "资金持续流出(2.9亿/5日2.3亿)，换出"
   },
   {
    "code": "sh518880",
@@ -378,10 +378,10 @@
    "tag": "黄金ETF",
    "kind": "ETF",
    "market": "海外",
-   "price": 8.93,
-   "chg_pct": -0.88,
-   "chg5": 0.6197183098591408,
-   "pos20": 0.14346590909090803,
+   "price": 8.859,
+   "chg_pct": -0.8,
+   "chg5": 0.35111564163550213,
+   "pos20": 0.04505813953488206,
    "proxy": null,
    "flow": {
     "today": null,
@@ -400,16 +400,16 @@
    "tag": "纳指ETF",
    "kind": "ETF",
    "market": "海外",
-   "price": 2.283,
-   "chg_pct": 0.62,
-   "chg5": 4.062072113190318,
+   "price": 2.316,
+   "chg_pct": 1.45,
+   "chg5": 5.646630236794148,
    "pos20": 1.0,
    "proxy": "纳斯达克",
    "flow": {
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": 1.5,
+    "pct": 2.3,
     "board": null
    },
    "action": "持有",
@@ -422,16 +422,16 @@
    "tag": "标普500ETF",
    "kind": "ETF",
    "market": "海外",
-   "price": 2.048,
-   "chg_pct": 0.79,
-   "chg5": 2.3488255872064157,
+   "price": 2.057,
+   "chg_pct": 0.44,
+   "chg5": 2.849999999999997,
    "pos20": 1.0,
    "proxy": "标普500",
    "flow": {
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": 0.9,
+    "pct": 1.5,
     "board": null
    },
    "action": "持有",
@@ -444,10 +444,10 @@
    "tag": "日经225ETF",
    "kind": "ETF",
    "market": "海外",
-   "price": 2.125,
-   "chg_pct": 0.0,
-   "chg5": 1.5289058767319563,
-   "pos20": 0.5053763440860233,
+   "price": 2.151,
+   "chg_pct": 1.22,
+   "chg5": 3.116011505273253,
+   "pos20": 0.7849462365591395,
    "proxy": null,
    "flow": {
     "today": null,
@@ -469,28 +469,7 @@
   "note": "规则判断路径：经济→政策→资金集中→放量→赚钱效应",
   "src": "自动规则"
  },
- "opportunity": {
-  "name": "通信设备",
-  "board": "通信设备",
-  "score_yi": 81.1,
-  "today_main_yi": 26.0,
-  "reasons": [
-   [
-    "资金",
-    "↑"
-   ],
-   [
-    "5日资金",
-    "↑"
-   ],
-   [
-    "趋势",
-    "↑"
-   ]
-  ],
-  "trigger": "通信设备资金连续流入 + 等放量确认后再加 → 提高该方向仓位；连续两日证伪则放弃。",
-  "asof": "2026-09-21 16:14"
- },
+ "opportunity": null,
  "op": {
   "signal_on": false,
   "signal_cond": [
@@ -498,7 +477,7 @@
    "指数站上20日线"
   ],
   "headline": "不提高总仓位",
-  "top_action": "减 电网设备ETF华夏，腾出仓位等新主线",
+  "top_action": "减 科士达，腾出仓位等新主线",
   "events": [],
   "pos_pct": 55,
   "cash_pct": 45
