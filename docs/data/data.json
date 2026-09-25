@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "A股资金·政策驾驶舱",
-  "generated_at": "2026-09-24 20:46:58",
+  "generated_at": "2026-09-25 20:50:24",
   "market_closed": true,
   "asof": "行情 2026-09-24 16:14；涨跌分布 20260924",
   "data_src": "数据：腾讯行情/东方财富；宏观政策：手动维护(带日期来源)",
@@ -88,16 +88,6 @@
  "flows": {
   "in": [
    {
-    "name": "半导体",
-    "board": "半导体材料",
-    "score_yi": 6.5,
-    "today_main_yi": 0.9,
-    "f5_yi": 4.3,
-    "f10_yi": 24.0,
-    "pct_today": -1.99,
-    "beats_index": false
-   },
-   {
     "name": "煤炭",
     "board": "煤炭",
     "score_yi": 4.5,
@@ -116,38 +106,48 @@
     "f10_yi": -0.4,
     "pct_today": -0.64,
     "beats_index": true
+   },
+   {
+    "name": "风电",
+    "board": "风电设备",
+    "score_yi": 2.5,
+    "today_main_yi": 7.0,
+    "f5_yi": -8.5,
+    "f10_yi": 7.8,
+    "pct_today": 2.15,
+    "beats_index": true
    }
   ],
   "out": [
    {
-    "name": "特高压",
-    "board": "特高压",
-    "score_yi": -63.8,
-    "today_main_yi": -32.6,
-    "f5_yi": -89.3,
-    "f10_yi": -103.3,
-    "pct_today": -1.49,
+    "name": "光模块",
+    "board": "光通信模块",
+    "score_yi": -165.4,
+    "today_main_yi": -139.6,
+    "f5_yi": -180.3,
+    "f10_yi": -207.5,
+    "pct_today": -3.18,
     "beats_index": false
    },
    {
-    "name": "人形机器人",
-    "board": "人形机器人",
-    "score_yi": -50.4,
-    "today_main_yi": -30.8,
-    "f5_yi": -38.1,
-    "f10_yi": -117.8,
-    "pct_today": -1.31,
+    "name": "数据中心",
+    "board": "数据中心",
+    "score_yi": -154.1,
+    "today_main_yi": -117.9,
+    "f5_yi": -138.1,
+    "f10_yi": -268.4,
+    "pct_today": -1.53,
     "beats_index": false
    },
    {
-    "name": "军工",
-    "board": "军工",
-    "score_yi": -38.2,
-    "today_main_yi": -11.5,
-    "f5_yi": -34.7,
-    "f10_yi": -110.1,
-    "pct_today": -1.01,
-    "beats_index": true
+    "name": "新能源车",
+    "board": "新能源车",
+    "score_yi": -148.1,
+    "today_main_yi": -95.6,
+    "f5_yi": -140.3,
+    "f10_yi": -291.1,
+    "pct_today": -1.25,
+    "beats_index": false
    }
   ]
  },
@@ -182,7 +182,7 @@
    "market": "A股",
    "price": 0.975,
    "chg_pct": -0.61,
-   "chg5": -0.6085192697768749,
+   "chg5": -1.1156186612576113,
    "pos20": 0.0,
    "proxy": null,
    "flow": {
@@ -204,15 +204,15 @@
    "market": "A股",
    "price": 0.701,
    "chg_pct": -2.37,
-   "chg5": -0.4267425320056861,
-   "pos20": 0.6419753086419748,
+   "chg5": -0.2844950213371278,
+   "pos20": 0.6543209876543206,
    "proxy": null,
    "flow": {
-    "today": 0.9,
-    "f5": 4.3,
-    "f10": 24.0,
-    "pct": -2.0,
-    "board": "半导体材料"
+    "today": -1.7,
+    "f5": -12.7,
+    "f10": 27.8,
+    "pct": -1.7,
+    "board": "半导体设备"
    },
    "action": "持有",
    "action_color": "blue",
@@ -230,11 +230,11 @@
    "pos20": 0.0,
    "proxy": null,
    "flow": {
-    "today": 0.1,
-    "f5": 0.2,
-    "f10": 0.2,
-    "pct": -0.7,
-    "board": "燃料电池"
+    "today": -21.1,
+    "f5": -26.6,
+    "f10": -111.3,
+    "pct": -2.0,
+    "board": "电池"
    },
    "action": "持有",
    "action_color": "blue",
@@ -255,7 +255,7 @@
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": -0.4,
+    "pct": -1.1,
     "board": null
    },
    "action": "持有",
@@ -270,8 +270,8 @@
    "market": "A股",
    "price": 0.839,
    "chg_pct": 0.72,
-   "chg5": 0.35842293906809264,
-   "pos20": 0.5897435897435898,
+   "chg5": 0.2389486260454099,
+   "pos20": 0.5641025641025641,
    "proxy": null,
    "flow": {
     "today": 1.5,
@@ -292,15 +292,15 @@
    "market": "A股",
    "price": 0.679,
    "chg_pct": -3.14,
-   "chg5": -0.8746355685131157,
-   "pos20": 0.5616438356164392,
+   "chg5": -1.0204081632653073,
+   "pos20": 0.5479452054794529,
    "proxy": null,
    "flow": {
-    "today": -0.3,
-    "f5": 4.2,
-    "f10": 4.7,
-    "pct": -0.9,
-    "board": "通信应用增值服务"
+    "today": -97.3,
+    "f5": -160.5,
+    "f10": -114.2,
+    "pct": -2.1,
+    "board": "通信设备"
    },
    "action": "持有",
    "action_color": "blue",
@@ -340,11 +340,11 @@
    "pos20": 0.11764705882352654,
    "proxy": null,
    "flow": {
-    "today": -32.6,
-    "f5": -89.3,
-    "f10": -103.3,
-    "pct": -1.5,
-    "board": "特高压"
+    "today": -10.1,
+    "f5": -27.3,
+    "f10": -71.4,
+    "pct": -1.1,
+    "board": "电网设备"
    },
    "action": "持有",
    "action_color": "blue",
@@ -380,7 +380,7 @@
    "market": "海外",
    "price": 8.788,
    "chg_pct": -1.23,
-   "chg5": -0.7452574525745326,
+   "chg5": -0.767841011743442,
    "pos20": 0.0,
    "proxy": null,
    "flow": {
@@ -402,14 +402,14 @@
    "market": "海外",
    "price": 2.312,
    "chg_pct": -0.94,
-   "chg5": 4.054054054054057,
-   "pos20": 0.8321678321678323,
+   "chg5": 4.144144144144124,
+   "pos20": 0.8461538461538447,
    "proxy": "纳斯达克",
    "flow": {
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": -1.1,
+    "pct": 0.0,
     "board": null
    },
    "action": "持有",
@@ -431,7 +431,7 @@
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": -0.8,
+    "pct": -0.0,
     "board": null
    },
    "action": "持有",
