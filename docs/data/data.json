@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "A股资金·政策驾驶舱",
-  "generated_at": "2026-09-30 21:56:54",
+  "generated_at": "2026-10-01 22:36:06",
   "market_closed": true,
   "asof": "行情 2026-09-30 16:15；涨跌分布 20260930",
   "data_src": "数据：腾讯行情/东方财富；宏观政策：手动维护(带日期来源)",
@@ -86,70 +86,8 @@
   ]
  },
  "flows": {
-  "in": [
-   {
-    "name": "医药",
-    "board": "医药生物",
-    "score_yi": 14.0,
-    "today_main_yi": 61.9,
-    "f5_yi": -59.5,
-    "f10_yi": 4.5,
-    "pct_today": 2.03,
-    "beats_index": true
-   },
-   {
-    "name": "汽车零部件",
-    "board": "汽车零部件",
-    "score_yi": 11.3,
-    "today_main_yi": 7.4,
-    "f5_yi": 11.8,
-    "f10_yi": 20.5,
-    "pct_today": 0.01,
-    "beats_index": false
-   },
-   {
-    "name": "食品饮料",
-    "board": "食品饮料",
-    "score_yi": 9.4,
-    "today_main_yi": 14.2,
-    "f5_yi": 7.1,
-    "f10_yi": 0.8,
-    "pct_today": 1.51,
-    "beats_index": true
-   }
-  ],
-  "out": [
-   {
-    "name": "有色",
-    "board": "有色金属",
-    "score_yi": -81.8,
-    "today_main_yi": 8.3,
-    "f5_yi": -152.1,
-    "f10_yi": -201.7,
-    "pct_today": -0.47,
-    "beats_index": false
-   },
-   {
-    "name": "黄金",
-    "board": "黄金",
-    "score_yi": -14.6,
-    "today_main_yi": 1.4,
-    "f5_yi": -19.1,
-    "f10_yi": -47.8,
-    "pct_today": 1.39,
-    "beats_index": true
-   },
-   {
-    "name": "银行",
-    "board": "银行",
-    "score_yi": -12.4,
-    "today_main_yi": -0.9,
-    "f5_yi": -20.0,
-    "f10_yi": -29.7,
-    "pct_today": 1.46,
-    "beats_index": true
-   }
-  ]
+  "in": [],
+  "out": []
  },
  "holdings": [
   {
@@ -204,8 +142,8 @@
    "market": "A股",
    "price": 0.651,
    "chg_pct": -2.98,
-   "chg5": -8.963585434173659,
-   "pos20": 0.02469135802469139,
+   "chg5": -8.823529411764696,
+   "pos20": 0.03703703703703709,
    "proxy": null,
    "flow": {
     "today": null,
@@ -230,15 +168,15 @@
    "pos20": 0.2328767123287671,
    "proxy": null,
    "flow": {
-    "today": 10.0,
-    "f5": -2.6,
-    "f10": -74.7,
-    "pct": 0.9,
-    "board": "电池"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "流出但已超跌，等企稳"
+   "reason": "处于超跌区但仍在下行，等放量企稳"
   },
   {
    "code": "sz159792",
@@ -270,19 +208,19 @@
    "market": "A股",
    "price": 0.853,
    "chg_pct": 1.43,
-   "chg5": 1.3110846245530494,
-   "pos20": 0.7391304347826086,
+   "chg5": 1.6686531585220488,
+   "pos20": 0.8695652173913043,
    "proxy": null,
    "flow": {
-    "today": -0.9,
-    "f5": -20.0,
-    "f10": -29.7,
-    "pct": 1.5,
-    "board": "银行"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
-   "action": "减仓",
-   "action_color": "red",
-   "reason": "资金持续流出(0.9亿/5日20.0亿)，换出"
+   "action": "持有",
+   "action_color": "blue",
+   "reason": "趋势平稳偏强，继续持有"
   },
   {
    "code": "sh515880",
@@ -292,19 +230,19 @@
    "market": "A股",
    "price": 0.626,
    "chg_pct": -0.48,
-   "chg5": -10.89108910891089,
-   "pos20": 0.03529411764705887,
+   "chg5": -11.456859971711452,
+   "pos20": 0.0,
    "proxy": null,
    "flow": {
-    "today": 6.6,
-    "f5": -10.1,
-    "f10": -22.1,
-    "pct": -0.9,
-    "board": "通信终端及配件"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "流出但已超跌，等企稳"
+   "reason": "处于超跌区但仍在下行，等放量企稳"
   },
   {
    "code": "sh588790",
@@ -340,15 +278,15 @@
    "pos20": 0.0,
    "proxy": null,
    "flow": {
-    "today": 9.6,
-    "f5": -72.6,
-    "f10": -159.8,
-    "pct": 0.2,
-    "board": "电力设备"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "流出但已超跌，等企稳"
+   "reason": "处于超跌区但仍在下行，等放量企稳"
   },
   {
    "code": "sz159770",
@@ -362,15 +300,15 @@
    "pos20": 0.016129032258064543,
    "proxy": null,
    "flow": {
-    "today": -0.4,
-    "f5": -7.6,
-    "f10": -9.9,
-    "pct": -0.1,
-    "board": "机器人"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "资金持续流出(0.4亿/5日7.6亿)，超跌等企稳"
+   "reason": "处于超跌区但仍在下行，等放量企稳"
   },
   {
    "code": "sh518880",
@@ -380,8 +318,8 @@
    "market": "海外",
    "price": 8.633,
    "chg_pct": 1.34,
-   "chg5": -2.584941867027868,
-   "pos20": 0.17209302325581508,
+   "chg5": -2.551077999774254,
+   "pos20": 0.17674418604651018,
    "proxy": null,
    "flow": {
     "today": null,
@@ -402,14 +340,14 @@
    "market": "海外",
    "price": 2.352,
    "chg_pct": 1.2,
-   "chg5": 1.4680483592400817,
+   "chg5": 1.5544041450777257,
    "pos20": 1.0,
    "proxy": "纳斯达克",
    "flow": {
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": 0.7,
+    "pct": -0.0,
     "board": null
    },
    "action": "持有",
@@ -431,7 +369,7 @@
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": 0.4,
+    "pct": -0.1,
     "board": null
    },
    "action": "等待",
@@ -474,7 +412,7 @@
   "signal_on": false,
   "signal_cond": [],
   "headline": "不提高总仓位",
-  "top_action": "减 银行ETF华宝，腾出仓位等新主线",
+  "top_action": "持有为主，等待成交放量确认后再动作",
   "events": [],
   "pos_pct": 55,
   "cash_pct": 45
