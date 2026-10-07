@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "A股资金·政策驾驶舱",
-  "generated_at": "2026-10-06 22:17:38",
+  "generated_at": "2026-10-07 22:36:42",
   "market_closed": true,
   "asof": "行情 2026-09-30 16:15；涨跌分布 20260930",
   "data_src": "数据：腾讯行情/东方财富；宏观政策：手动维护(带日期来源)",
@@ -86,70 +86,8 @@
   ]
  },
  "flows": {
-  "in": [
-   {
-    "name": "汽车零部件",
-    "board": "汽车零部件",
-    "score_yi": 11.3,
-    "today_main_yi": 7.4,
-    "f5_yi": 11.8,
-    "f10_yi": 20.5,
-    "pct_today": 0.01,
-    "beats_index": false
-   },
-   {
-    "name": "白酒",
-    "board": "白酒",
-    "score_yi": 10.8,
-    "today_main_yi": 12.5,
-    "f5_yi": 11.4,
-    "f10_yi": 5.8,
-    "pct_today": 2.1,
-    "beats_index": true
-   },
-   {
-    "name": "医药",
-    "board": "创新药",
-    "score_yi": 10.8,
-    "today_main_yi": 41.5,
-    "f5_yi": -35.7,
-    "f10_yi": 3.8,
-    "pct_today": 2.74,
-    "beats_index": true
-   }
-  ],
-  "out": [
-   {
-    "name": "光模块",
-    "board": "光通信模块",
-    "score_yi": -231.9,
-    "today_main_yi": -33.4,
-    "f5_yi": -488.6,
-    "f10_yi": -343.2,
-    "pct_today": -1.8,
-    "beats_index": false
-   },
-   {
-    "name": "人工智能",
-    "board": "人工智能",
-    "score_yi": -216.7,
-    "today_main_yi": -49.7,
-    "f5_yi": -448.7,
-    "f10_yi": -286.3,
-    "pct_today": -0.67,
-    "beats_index": false
-   },
-   {
-    "name": "数据中心",
-    "board": "数据中心",
-    "score_yi": -211.2,
-    "today_main_yi": -58.7,
-    "f5_yi": -401.0,
-    "f10_yi": -307.9,
-    "pct_today": -0.93,
-    "beats_index": false
-   }
-  ]
+  "in": [],
+  "out": []
  },
  "holdings": [
   {
@@ -186,15 +124,15 @@
    "pos20": 0.3333333333333333,
    "proxy": null,
    "flow": {
-    "today": 4.5,
-    "f5": -13.2,
-    "f10": 3.9,
-    "pct": 1.1,
-    "board": "红利股"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
-   "action": "持有",
-   "action_color": "blue",
-   "reason": "资金小幅流入(4.5亿)，持有观察"
+   "action": "等待",
+   "action_color": "yellow",
+   "reason": "信号中性，保持耐心"
   },
   {
    "code": "sz159516",
@@ -208,15 +146,15 @@
    "pos20": 0.03703703703703709,
    "proxy": null,
    "flow": {
-    "today": -8.3,
-    "f5": -26.3,
-    "f10": 9.2,
-    "pct": -3.2,
-    "board": "半导体设备"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "流出但已超跌，等企稳"
+   "reason": "处于超跌区但仍在下行，等放量企稳"
   },
   {
    "code": "sz159755",
@@ -230,15 +168,15 @@
    "pos20": 0.2328767123287671,
    "proxy": null,
    "flow": {
-    "today": 10.0,
-    "f5": -2.6,
-    "f10": -74.7,
-    "pct": 0.9,
-    "board": "电池"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "流出但已超跌，等企稳"
+   "reason": "处于超跌区但仍在下行，等放量企稳"
   },
   {
    "code": "sz159792",
@@ -255,7 +193,7 @@
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": 0.9,
+    "pct": -0.7,
     "board": null
    },
    "action": "等待",
@@ -274,15 +212,15 @@
    "pos20": 0.8695652173913043,
    "proxy": null,
    "flow": {
-    "today": -0.9,
-    "f5": -20.0,
-    "f10": -29.7,
-    "pct": 1.5,
-    "board": "银行"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
-   "action": "减仓",
-   "action_color": "red",
-   "reason": "资金持续流出(0.9亿/5日20.0亿)，换出"
+   "action": "持有",
+   "action_color": "blue",
+   "reason": "趋势平稳偏强，继续持有"
   },
   {
    "code": "sh515880",
@@ -296,15 +234,15 @@
    "pos20": 0.0,
    "proxy": null,
    "flow": {
-    "today": -3.7,
-    "f5": -338.3,
-    "f10": -247.3,
-    "pct": -1.0,
-    "board": "通信设备"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "资金持续流出(3.7亿/5日338.3亿)，超跌等企稳"
+   "reason": "处于超跌区但仍在下行，等放量企稳"
   },
   {
    "code": "sh588790",
@@ -340,15 +278,15 @@
    "pos20": 0.0,
    "proxy": null,
    "flow": {
-    "today": 9.6,
-    "f5": -72.6,
-    "f10": -159.8,
-    "pct": 0.2,
-    "board": "电力设备"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "流出但已超跌，等企稳"
+   "reason": "处于超跌区但仍在下行，等放量企稳"
   },
   {
    "code": "sz159770",
@@ -362,15 +300,15 @@
    "pos20": 0.016129032258064543,
    "proxy": null,
    "flow": {
-    "today": -0.4,
-    "f5": -7.6,
-    "f10": -9.9,
-    "pct": -0.1,
-    "board": "机器人"
+    "today": null,
+    "f5": null,
+    "f10": null,
+    "pct": null,
+    "board": null
    },
    "action": "等待",
    "action_color": "yellow",
-   "reason": "资金持续流出(0.4亿/5日7.6亿)，超跌等企稳"
+   "reason": "处于超跌区但仍在下行，等放量企稳"
   },
   {
    "code": "sh518880",
@@ -409,7 +347,7 @@
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": 0.8,
+    "pct": -0.7,
     "board": null
    },
    "action": "持有",
@@ -431,7 +369,7 @@
     "today": null,
     "f5": null,
     "f10": null,
-    "pct": 0.7,
+    "pct": -0.6,
     "board": null
    },
    "action": "等待",
@@ -469,33 +407,12 @@
   "note": "规则判断路径：经济→政策→资金集中→放量→赚钱效应",
   "src": "自动规则"
  },
- "opportunity": {
-  "name": "白酒",
-  "board": "白酒",
-  "score_yi": 10.8,
-  "today_main_yi": 12.5,
-  "reasons": [
-   [
-    "资金",
-    "↑"
-   ],
-   [
-    "5日资金",
-    "↑"
-   ],
-   [
-    "趋势",
-    "↑"
-   ]
-  ],
-  "trigger": "成交额持续放大 + 白酒资金连续流入 + 等放量确认后再加 → 提高该方向仓位；连续两日证伪则放弃。",
-  "asof": "2026-09-30 16:15"
- },
+ "opportunity": null,
  "op": {
   "signal_on": false,
   "signal_cond": [],
   "headline": "不提高总仓位",
-  "top_action": "减 银行ETF华宝，腾出仓位等新主线",
+  "top_action": "持有为主，等待成交放量确认后再动作",
   "events": [],
   "pos_pct": 55,
   "cash_pct": 45
